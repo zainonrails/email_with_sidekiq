@@ -1,0 +1,25 @@
+<h2>All Users</h2>
+
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Age</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.age %></td>
+        <td><%= link_to 'Delete', user, method: :delete, data: {confirm: 'are you sure!'} %></td>
+      </tr>
+
+    <%end%>
+  </tbody>
+</table>
+
+<%= link_to 'New User', new_user_path %>
