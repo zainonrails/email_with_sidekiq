@@ -3,9 +3,6 @@ dist: xenial
 branches:
   only:
   - simple
-before_script:
-  - RAILS_ENV=test rails db:create
-  - rails db:migrate RAILS_ENV=test
 script:
   - export RAILS_ENV=test
   - rspec
