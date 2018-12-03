@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   end
 
   def new
-    user = User.create(name: 'name', email: 'email', age: 7)
+    user = User.create(name: 'Zain', email: 'xainbutt28@gmail.com', age: 24)
     puts user.inspect
     # UserMakerWorker.perform_async(user.id)
     redirect_to :root

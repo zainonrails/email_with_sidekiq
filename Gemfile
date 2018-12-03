@@ -40,7 +40,7 @@ gem 'sidekiq'
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 
 # elastic search
-gem 'chewy'
+# gem 'chewy'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

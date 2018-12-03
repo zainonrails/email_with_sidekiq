@@ -1,0 +1,9 @@
+language: ruby
+dist: xenial
+branches:
+  only:
+  - simple
+before_script:
+  - bundle install
+script:
+  - rspec

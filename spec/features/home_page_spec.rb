@@ -9,5 +9,6 @@ feature 'Home Page' do
 	scenario 'Create a random user' do 
 		visit('/')
 		click_on 'New User'
+		expect(page).to have_content('Zain')
 	end
 end
