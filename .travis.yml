@@ -4,5 +4,4 @@ branches:
   only:
   - simple
 script:
-  - export RAILS_ENV=test
-  - rspec
+  - rspec spec/
